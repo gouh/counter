@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis guías</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/notyf/notyf.min.css">
+</head>
+<body>
+<div class="container mt-5 fs-6">
+    <div class="row">
+        <div class="col-md-3">
+            <h4>Origen</h4>
+            <div class="mb-3">
+                <label for="origin-name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="origin-name" value="Hugo Hernandez Valdez">
+            </div>
+            <div class="mb-3">
+                <label for="origin-company" class="form-label">Empresa</label>
+                <input type="text" class="form-control" id="origin-company" value="Envia">
+            </div>
+            <div class="mb-3">
+                <label for="origin-email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="origin-email" value="hugohv10@gmail.com">
+            </div>
+            <div class="mb-3">
+                <label for="origin-phone" class="form-label">Teléfono</label>
+                <input type="text" class="form-control" id="origin-phone" value="4432076521">
+            </div>
+            <div class="mb-3">
+                <label for="origin-street" class="form-label">Calle</label>
+                <input type="text" class="form-control" id="origin-street" value="Mango">
+            </div>
+            <div class="mb-3">
+                <label for="origin-number" class="form-label">Número</label>
+                <input type="text" class="form-control" id="origin-number" value="154">
+            </div>
+            <div class="mb-3">
+                <label for="origin-district" class="form-label">Colonia</label>
+                <input type="text" class="form-control" id="origin-district" value="La Huerta">
+            </div>
+            <div class="mb-3">
+                <label for="origin-city" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="origin-city" value="Morelia">
+            </div>
+            <div class="mb-3">
+                <label for="origin-state" class="form-label">Estado</label>
+                <input type="text" class="form-control" id="origin-state" value="MC">
+            </div>
+            <div class="mb-3">
+                <label for="origin-country" class="form-label">País</label>
+                <input type="text" class="form-control" id="origin-country" value="MX">
+            </div>
+            <div class="mb-3">
+                <label for="origin-postalCode" class="form-label">Código Postal</label>
+                <input type="text" class="form-control" id="origin-postalCode" value="58080">
+            </div>
+            <div class="mb-3">
+                <label for="origin-reference" class="form-label">Referencia</label>
+                <input type="text" class="form-control" id="origin-reference" value="">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <h4>Destino</h4>
+            <div class="mb-3">
+                <label for="destination-name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="destination-name" value="Hugo Hernandez Valdez">
+            </div>
+            <div class="mb-3">
+                <label for="destination-company" class="form-label">Empresa</label>
+                <input type="text" class="form-control" id="destination-company" value="Envia">
+            </div>
+            <div class="mb-3">
+                <label for="destination-email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="destination-email" value="hugohv10@gmail.com">
+            </div>
+            <div class="mb-3">
+                <label for="destination-phone" class="form-label">Teléfono</label>
+                <input type="text" class="form-control" id="destination-phone" value="4432076521">
+            </div>
+            <div class="mb-3">
+                <label for="destination-street" class="form-label">Calle</label>
+                <input type="text" class="form-control" id="destination-street" value="Mango">
+            </div>
+            <div class="mb-3">
+                <label for="destination-number" class="form-label">Número</label>
+                <input type="text" class="form-control" id="destination-number" value="154">
+            </div>
+            <div class="mb-3">
+                <label for="destination-district" class="form-label">Colonia</label>
+                <input type="text" class="form-control" id="destination-district" value="La Huerta">
+            </div>
+            <div class="mb-3">
+                <label for="destination-city" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="destination-city" value="Morelia">
+            </div>
+            <div class="mb-3">
+                <label for="destination-state" class="form-label">Estado</label>
+                <input type="text" class="form-control" id="destination-state" value="MC">
+            </div>
+            <div class="mb-3">
+                <label for="destination-country" class="form-label">País</label>
+                <input type="text" class="form-control" id="destination-country" value="MX">
+            </div>
+            <div class="mb-3">
+                <label for="destination-postalCode" class="form-label">Código Postal</label>
+                <input type="text" class="form-control" id="destination-postalCode" value="58080">
+            </div>
+            <div class="mb-3">
+                <label for="destination-reference" class="form-label">Referencia</label>
+                <input type="text" class="form-control" id="destination-reference" value="">
+            </div>
+        </div>
+        <div class="col-md-3" id="packages-container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h4>Contenido</h4>
+                <button type="button" id="addPackageBtn" class="btn btn-outline-success">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+            <div class="package mt-3" data-package-index="1">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="packageNumber">Paquete 1</h5>
+                    <button type="button" class="btn text-danger removePackageBtn">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="mb-3">
+                    <label for="contentContent-1" class="form-label">Contenido</label>
+                    <input type="text" class="form-control" id="contentContent-1" value="camisetas rojas">
+                </div>
+                <div class="mb-3">
+                    <label for="contentAmount-1" class="form-label">Cantidad</label>
+                    <input type="number" class="form-control" id="contentAmount-1" value="1">
+                </div>
+                <div class="mb-3">
+                    <label for="contentType-1" class="form-label">Tipo</label>
+                    <input type="text" class="form-control" id="contentType-1" value="box">
+                </div>
+                <div class="mb-3">
+                    <label for="contentLength-1" class="form-label">Largo (CM)</label>
+                    <input type="number" class="form-control" id="contentLength-1" value="5">
+                </div>
+                <div class="mb-3">
+                    <label for="contentWidth-1" class="form-label">Ancho (CM)</label>
+                    <input type="number" class="form-control" id="contentWidth-1" value="5">
+                </div>
+                <div class="mb-3">
+                    <label for="contentHeight-1" class="form-label">Alto (CM)</label>
+                    <input type="number" class="form-control" id="contentHeight-1" value="5">
+                </div>
+                <div class="mb-3">
+                    <label for="contentWeight-1" class="form-label">Peso (KG)</label>
+                    <input type="number" class="form-control" id="contentWeight-1" value="0.011">
+                </div>
+                <div class="mb-3">
+                    <label for="contentInsurance-1" class="form-label">Seguro</label>
+                    <input type="number" class="form-control" id="contentInsurance-1" value="0">
+                </div>
+                <div class="mb-3">
+                    <label for="contentDeclaredValue-1" class="form-label">Valor Declarado</label>
+                    <input type="number" class="form-control" id="contentDeclaredValue-1" value="400">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <h4>Guías Generadas</h4>
+                <span id="tracking-totals" class="fs-4">0</span>
+            </div>
+            <div id="tracking-content">
+                <ul id="tracking-numbers"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="mt-3 mb-3 col-md-12">
+            <button type="button" id="submit" class="btn btn-outline-success w-100 fs-4">
+                Generar guía
+            </button>
+        </div>
+    </div>
+</div>
+<div id="alert-placeholder"></div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.4/socket.io.min.js"></script>
+<script src="https://unpkg.com/notyf/notyf.min.js"></script>
+<script src="js/wsClient.js"></script>
+<script src="js/shipClient.js"></script>
+<script>
+    let guide = null;
+    let notyf = null;
+
+    const shipment = {
+        "carrier": "Redpack",
+        "service": "Ground",
+        "type": 1
+    };
+
+    const settings = {
+        "printFormat": "PDF",
+        "printSize": "STOCK_4X6",
+        "comments": "comentarios de el envío"
+    };
+
+    /**
+     * Collects data from the origin, destination, and packages sections.
+     *
+     * @returns {Object} - An object containing the collected data.
+     */
+    function collectData() {
+        const origin = collectSectionData('origin');
+        const destination = collectSectionData('destination');
+        const packages = collectPackages();
+        return {origin, destination, packages, shipment, settings}
+    }
+
+    /**
+     * Collects data from a section of a form based on the given prefix.
+     *
+     * @param {string} prefix - The prefix used to identify the form fields.
+     * @returns {Object} - An object containing the collected data.
+     * */
+    function collectSectionData(prefix) {
+        return {
+            name: document.getElementById(`${prefix}-name`).value,
+            company: document.getElementById(`${prefix}-company`).value,
+            email: document.getElementById(`${prefix}-email`).value,
+            phone: document.getElementById(`${prefix}-phone`).value,
+            street: document.getElementById(`${prefix}-street`).value,
+            number: document.getElementById(`${prefix}-number`).value,
+            district: document.getElementById(`${prefix}-district`).value,
+            city: document.getElementById(`${prefix}-city`).value,
+            state: document.getElementById(`${prefix}-state`).value,
+            country: document.getElementById(`${prefix}-country`).value,
+            postalCode: document.getElementById(`${prefix}-postalCode`).value,
+            reference: document.getElementById(`${prefix}-reference`).value
+        };
+    }
+
+    /**
+     * Collects package information from the HTML elements and returns an array of package objects.
+     *
+     * @returns {Object[]} - An array of package objects.
+     */
+    function collectPackages() {
+        const packageElements = document.querySelectorAll('.package');
+        return Array.from(packageElements).map((packageElement, index) => {
+            return {
+                content: document.getElementById(`contentContent-${index + 1}`).value,
+                amount: parseInt(document.getElementById(`contentAmount-${index + 1}`).value, 10),
+                type: document.getElementById(`contentType-${index + 1}`).value,
+                dimensions: {
+                    length: parseFloat(document.getElementById(`contentLength-${index + 1}`).value),
+                    width: parseFloat(document.getElementById(`contentWidth-${index + 1}`).value),
+                    height: parseFloat(document.getElementById(`contentHeight-${index + 1}`).value)
+                },
+                weight: parseFloat(document.getElementById(`contentWeight-${index + 1}`).value),
+                insurance: parseInt(document.getElementById(`contentInsurance-${index + 1}`).value, 10),
+                declaredValue: parseFloat(document.getElementById(`contentDeclaredValue-${index + 1}`).value),
+                weightUnit: "KG",
+                lengthUnit: "CM"
+            };
+        });
+    }
+
+    /**
+     * Adds a new package to the package container.
+     *
+     * @return {void}
+     */
+    function addPackage() {
+        const container = document.getElementById('packages-container');
+        const packageIndex = document.querySelectorAll('.package').length + 1;
+
+        const newPackage = container.lastElementChild.cloneNode(true);
+        newPackage.setAttribute('data-package-index', packageIndex);
+
+        const packageNumber = newPackage.querySelectorAll('.packageNumber');
+        packageNumber[0].innerHTML = 'Paquete ' + packageIndex;
+
+        const inputs = newPackage.querySelectorAll('input');
+        inputs.forEach(input => {
+            const baseId = input.id.split('-')[0];
+            input.id = `${baseId}-${packageIndex}`;
+        });
+
+        const labels = newPackage.querySelectorAll('label');
+        labels.forEach(label => {
+            if (label.htmlFor) {
+                const baseFor = label.htmlFor.split('-')[0];
+                label.htmlFor = `${baseFor}-${packageIndex}`;
+            }
+        });
+
+        const removeBtn = newPackage.querySelector('.removePackageBtn');
+        removeBtn.style.display = 'block';
+        removeBtn.addEventListener('click', function () {
+            newPackage.remove();
+        });
+
+        container.appendChild(newPackage);
+    }
+
+    /**
+     * Removes the package element from the DOM based on the provided event.
+     *
+     * @param {Event} event - The event that triggered the removal of the package element.
+     */
+    function removePackage(event) {
+        event.target.closest('.package').remove();
+    }
+
+    function updateShip(trackingNumbers) {
+        const trackingNumbersContainer = document.getElementById('tracking-numbers');
+        const trackingTotalsContainer = document.getElementById('tracking-totals');
+        trackingNumbersContainer.innerHTML = '';
+        trackingTotalsContainer.innerHTML = trackingNumbers.length;
+        trackingNumbers.forEach(number => {
+            const listItem = document.createElement('li');
+            listItem.textContent = number;
+            trackingNumbersContainer.appendChild(listItem);
+        });
+    }
+
+
+    /**
+     * Updates the ship information on the UI with the provided data.
+     *
+     * @param {Object} data - An object containing the ship information.
+     * @param {Array} data.trackingNumbers - An array of tracking numbers.
+     *
+     */
+    function onShipUpdated(data) {
+        notyf.success('¡Éxito! guía agregada.');
+        updateShip(data.trackingNumbers);
+    }
+
+    /**
+     * Handles the Ship Error Event.
+     *
+     * @param {any} data - The data associated with the Ship Error Event.
+     *
+     * @return {void}
+     */
+    function onShipErrorEvent(data) {
+        console.error(data);
+        notyf.error('Error: Algo salió mal, error: ' + data.err.message);
+    }
+
+    /**
+     * Sends a guide by collecting data and logging it to the console.
+     */
+    function sendGuide() {
+        guide.saveShip(collectData());
+    }
+
+    window.addEventListener('load', () => {
+        document.body.style.zoom = "75%"
+        guide = new ShipClient();
+        notyf = new Notyf({
+            duration: 8000,
+            position: {
+                x: 'right',
+                y: 'bottom',
+            },
+        });
+
+        // WS Events
+        guide.on("ship.show", data => updateShip(data.trackingNumbers));
+        guide.on("ship.updated", onShipUpdated);
+        guide.on("ship.error", onShipErrorEvent);
+
+        // DOM Events
+        document.getElementById('addPackageBtn').addEventListener('click', addPackage);
+        document.getElementById('submit').addEventListener('click', sendGuide);
+        document.querySelectorAll('.removePackageBtn').forEach((btn, index) => {
+            if (index > 0) {
+                btn.addEventListener('click', removePackage);
+            }
+        });
+    })
+</script>
+</html>
