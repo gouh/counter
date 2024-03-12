@@ -34,6 +34,15 @@ Este proyecto implementa un contador en tiempo real utilizando Node.js, Express,
 
 Para ejecutar este proyecto, necesitarás tener instalado Node.js versión 18.17 o superior.
 
+## Dependencias
+
+Este proyecto utiliza las siguientes dependencias principales:
+
+- **Express**: Un marco de aplicación web minimalista y flexible para Node.js, utilizado para construir servidores web y APIs.
+- **Socket.io**: Una biblioteca que permite la comunicación en tiempo real, bidireccional y basada en eventos entre los navegadores web y los servidores.
+- **Axios**: Un cliente HTTP basado en promesas para el navegador y Node.js, utilizado para realizar solicitudes HTTP.
+- **dotenv**: Un módulo de dependencia cero que carga variables de entorno desde un archivo `.env` a `process.env`, ayudando en la configuración del proyecto.
+
 ## Instalación
 
 Clona este repositorio y navega hasta el directorio del proyecto. Ejecuta el siguiente comando para instalar las dependencias:
@@ -83,3 +92,8 @@ Si deseas contribuir a este proyecto, por favor envía un Pull Request con tus m
 ## Licencia
 
 Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para obtener más detalles.
+
+
+## Autor
+
+- [@gouh](https://www.github.com/gouh)
