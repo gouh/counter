@@ -85,6 +85,11 @@ Deberías ver un mensaje indicando que el servicio está operativo.
 
 Abre un navegador y ve a `http://localhost:3000` para ver la interfaz del contador. Genera guías a través de la API para ver cómo el contador se incrementa en tiempo real en todas las pestañas del navegador abiertas.
 
+## Capturas
+![image](https://github.com/gouh/counter/assets/13145599/10278876-bc2a-4523-85bc-80afa7d2508e)
+![image](https://github.com/gouh/counter/assets/13145599/d31c78af-9922-48fb-9c04-c0a32b4ee6df)
+
+
 ## Contribuir
 
 Si deseas contribuir a este proyecto, por favor envía un Pull Request con tus mejoras.
